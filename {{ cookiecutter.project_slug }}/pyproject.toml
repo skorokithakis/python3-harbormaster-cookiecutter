@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = ""
+authors = ["{{ cookiecutter.author }}"]
+readme = "README.md"
+packages = [{include = "{{ cookiecutter.project_slug }}"}]
+
+[tool.poetry.scripts]
+willow = "{{ cookiecutter.project_slug }}:cli"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+
+[tool.poetry.group.dev.dependencies]
+pudb = "^2022.1.3"
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = ["F403", "E501", "N802", "N803", "N806", "C901", "D100", "D102", "D102", "D10"]

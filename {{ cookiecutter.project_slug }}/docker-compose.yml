@@ -1,0 +1,15 @@
+---
+services:
+  main:
+    build: .
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Athens
+      - YOUR_VAR
+    volumes:
+      - {{'{{ HM_CODE_DIR }}'}}:/code
+      - {{'{{ HM_DATA_DIR }}'}}:/data
+      - {{'{{ HM_CACHE_DIR }}'}}:/cache
+    ports:
+      - 1234:1234
