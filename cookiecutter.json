@@ -1,5 +1,6 @@
 {
   "project_name": "Python3 Harbormaster Cookiecutter template",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-  "author": "Stavros Korokithakis <hi@stavros.io>"
+  "author": "Stavros Korokithakis <hi@stavros.io>",
+  "what_is_the_airspeed_velocity_of_an_unladen_swallow": "11m/s"
 }
